@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "xyz.os_supara.twa",
+                     "sha256_cert_fingerprints": ["A6:B7:10:02:CE:7F:21:98:EA:CA:97:F5:CD:5E:EC:AA:48:B9:98:67:E0:5A:A3:3A:4C:E8:32:18:8C:B0:E2:64"] }
+      }
+]
