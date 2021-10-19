@@ -10,11 +10,11 @@ const Index = React.memo((props) => {
     const { isMobileApp } = props.app;
     const classes = pageListStyle();
     return (
-        <App pageName='Супара'>
+        <App pageName='Кант-Сут'>
             <Head>
-                <title>Супара</title>
+                <title>Кант-Сут</title>
                 <meta name='description' content='Система предназначена для ведения списка заявок на приобретение' />
-                <meta property='og:title' content='Супара' />
+                <meta property='og:title' content='Кант-Сут' />
                 <meta property='og:description' content='Система предназначена для ведения списка заявок на приобретение' />
                 <meta property='og:type' content='website' />
                 <meta property='og:image' content={`${urlMain}/static/512x512.png`} />
