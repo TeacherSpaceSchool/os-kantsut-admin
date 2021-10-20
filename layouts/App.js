@@ -34,10 +34,10 @@ const App = React.memo(props => {
     const [unread, setUnread] = useState({});
     const [reloadPage, setReloadPage] = useState(false);
     useEffect( ()=>{
-        if(authenticated&&!profile.role)
+        /*if(authenticated&&!profile.role)
             setProfile()
         else if(!authenticated&&profile.role)
-            logout(false)
+            logout(false)*/
     },[authenticated])
     useEffect( ()=>{
         if(mainWindow.current&&mainWindow.current.offsetWidth<900) {
@@ -69,7 +69,7 @@ const App = React.memo(props => {
 
     let subscriptionDataRes = useSubscription(subscriptionData);
     useEffect( ()=>{
-        if (
+        /*if (
             subscriptionDataRes &&
             authenticated &&
             profile.role &&
@@ -342,13 +342,13 @@ const App = React.memo(props => {
 
             }
 
-        }
+        }*/
     },[subscriptionDataRes.data])
 
     return(
         <div ref={mainWindow} className='App'>
             {
-                !authenticated||pinCode?
+                /*!authenticated||pinCode*/true?
                     <>
                     {
                         showAppBar?
