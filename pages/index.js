@@ -41,7 +41,9 @@ function mapStateToProps (state) {
 }
 
 Index.getInitialProps = async function(ctx) {
+    console.log(11)
     await initialApp(ctx)
+    console.log(22)
     return {data: {}};
 };
 
