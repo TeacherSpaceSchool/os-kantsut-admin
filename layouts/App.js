@@ -67,7 +67,7 @@ const App = React.memo(props => {
     });
 
 
-    /*let subscriptionDataRes = useSubscription(subscriptionData);
+    let subscriptionDataRes = useSubscription(subscriptionData);
     useEffect( ()=>{
         if (
             subscriptionDataRes &&
@@ -343,7 +343,7 @@ const App = React.memo(props => {
             }
 
         }
-    },[subscriptionDataRes.data])*/
+    },[subscriptionDataRes.data])
 
     return(
         <div ref={mainWindow} className='App'>
