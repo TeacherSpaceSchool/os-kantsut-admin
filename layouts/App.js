@@ -348,7 +348,7 @@ const App = React.memo(props => {
     return(
         <div ref={mainWindow} className='App'>
             {
-                /*!authenticated||pinCode*/true?
+                /*!authenticated||pinCode*/false?
                     <>
                     {
                         showAppBar?
