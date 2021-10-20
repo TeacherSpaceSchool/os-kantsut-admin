@@ -8,7 +8,6 @@ export default async (ctx)=>{
         let ua = uaParserJs(ctx.req.headers['user-agent'])
         ctx.store.getState().app.isMobileApp = ['mobile', 'tablet'].includes(ua.device.type)||checkMobile(ua.ua)
         ctx.store.getState().user.authenticated = getJWT(ctx.req.headers.cookie)
-        ctx.store.getState().user.profile = await getProfile(await getClientGqlSsr(ctx.req))
         if (ctx.store.getState().user.authenticated) {
             ctx.store.getState().user.profile = await getProfile(await getClientGqlSsr(ctx.req))
         }
