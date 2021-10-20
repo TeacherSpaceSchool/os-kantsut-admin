@@ -220,7 +220,6 @@ const Memorandum = React.memo((props) => {
                                         <div className={classes.nameField}>Записка:&nbsp;</div>
                                         <div className={classes.value}>{comment}</div>
                                     </div>
-                                    {console.log(profile, _memorandum.who)}
                                     {
                                         note.length||_memorandum.status==='обработка'&&profile._id===_memorandum.who._id?
                                             <div className={classes.row}>

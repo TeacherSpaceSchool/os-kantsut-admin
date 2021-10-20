@@ -45,7 +45,6 @@ const CardApplicationRoute = React.memo((props) => {
                                     className={classes.input}
                                     value={specialists}
                                     onChange={(event)=>{
-                                        console.log(event.target.value)
                                         setSpecialists(event.target.value)
                                     }}
                                     input={<Input/>}
